@@ -1,6 +1,13 @@
 # 🔁 Salesforce LWC: Generic Hierarchy Tree Grid
 
-A Lightning Web Component (LWC) that displays hierarchical data for **any SObject** in a nested tree grid format. Originally built for `Account`, this component has been enhanced to support any standard or custom object using dynamic metadata and recursive Apex.
+A Lightning Web Component (LWC) that displays hierarchical data for **any SObject** in a nested tree grid format. 
+
+## 🚀 Quick Install
+
+[![Install in Production](https://img.shields.io/badge/Install_on-Salesforce-00A1E0?style=for-the-badge&logo=salesforce)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tg50000000uTd&isdtp=p1)
+
+[![Install in Sandbox](https://img.shields.io/badge/Install_on-Sandbox-FF9900?style=for-the-badge&logo=salesforce)](https://test.salesforce.com/packaging/installPackage.apexp?p0=04tg50000000uTd&isdtp=p1)
+
 
 
 
