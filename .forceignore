@@ -21,3 +21,6 @@ README.md
 
 # Ignore test metadata (if you don’t want to deploy it)
 **/__tests__/
+
+# Ignore image assets used in README
+assets/

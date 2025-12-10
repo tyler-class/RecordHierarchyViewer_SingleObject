@@ -103,13 +103,71 @@ force-app
         └── classes
             └── HierarchicalRecordController.cls
 ```
+---
+## 📸 Visual Walkthrough
+
+### 🔷 **Account Object Example**
+
+#### ⚙️ Configuration Panel
+
+Configure the component for the `Account` object using component metadata:
+
+![Account Config](assets/Account_config.png)
+
+---
+
+#### 🔽 Collapsed View (Default)
+
+The grid tree renders in collapsed state on page load:
+
+![Account Collapsed](assets/Account_collapsed.png)
+
+---
+
+#### 🔼 Expanded View
+
+Once expanded, you can see the full hierarchy (note the icon showing the current record):
+
+![Account Expanded](assets/Account_expanded.png)
+
+---
+
+#### 🔗 Hyperlinked Records
+
+Lookup and name fields are rendered as clickable links:
+
+![Account Hyperlink](assets/Account_hyperlink.png)
+
+---
+
+### 🟣 **Custom Object Example**
+
+#### ⚙️ Configuration Panel
+
+Example configuration for a custom object with a parent lookup:
+
+![Custom Config](assets/Custom_config.png)
+
+---
+
+#### 🔽 Collapsed View
+
+Initial load is collapsed:
+
+![Custom Collapsed](assets/Custom_collapsed.png)
+
+---
+
+#### 🔼 Expanded View
+
+Expanded view showing the full custom object hierarchy:
+
+![Custom Expanded](assets/Custom_expanded.png)
 
 ---
 
 ## 🙌 Author & Credits
 
-Originally created by Tyler Class 12/10/2025
-[www.tylerclass.net](https://tylerclass.net)
-[www.github.com/tyler-class](https://github.com/tyler-class)
+Originally created by Tyler Class 12/10/2025 | [www.tylerclass.net](https://tylerclass.net) | [www.github.com/tyler-class](https://github.com/tyler-class)
 
 ---
