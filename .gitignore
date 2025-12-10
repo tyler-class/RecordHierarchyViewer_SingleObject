@@ -1,0 +1,35 @@
+# Salesforce DX & VS Code
+.sfdx
+.vscode
+.env
+*.log
+*.local
+*.scratch-def.json
+
+# Mac system files
+.DS_Store
+
+# Node modules (if you use npm packages)
+node_modules/
+
+# Coverage reports
+coverage/
+
+# Test results
+test-results/
+
+# Local deploy/package config
+deploy/
+package/
+
+# Git conflict backups
+*.orig
+*.rej
+
+# IDE/project-specific
+.idea/
+*.iml
+*.swp
+
+# Push-only metadata folders
+**/temp/

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <property name="parentFieldApiName" type="String" label="Parent Field API Name (case-sensitive)" />
+            <property name="fieldList" type="String" label="Fields to Display (comma-separated, case-sensitive)" />
+            <property name="title" type="String" label="Component Title" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

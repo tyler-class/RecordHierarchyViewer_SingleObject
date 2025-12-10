@@ -1,0 +1,23 @@
+# VS Code files
+.vscode/
+
+# Node modules
+node_modules/
+
+# SFDX local config and logs
+.sfdx/
+.env
+*.log
+
+# Org-specific files
+test-results/
+coverage/
+
+# Ignore destructiveChanges (unless used intentionally)
+destructiveChanges.xml
+
+# Ignore README and documentation
+README.md
+
+# Ignore test metadata (if you don’t want to deploy it)
+**/__tests__/

@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title={title} icon-name="standard:account">
+       <div class="slds-var-p-around_small">
+            <lightning-button variant={buttonVariant}
+            label={buttonLabel} title={buttonMsg} onclick={clickToExpandAll} 
+            ></lightning-button>
+       </div>    
+        <template if:true={hasData} >
+            <lightning-tree-grid 
+                key-field="Id"
+                columns={gridColumns}
+                data={treeData}
+                hide-checkbox-column>
+            </lightning-tree-grid>
+        </template>
+        <template if:true={error}>
+            <div class="slds-text-body_regular">Error: {error}</div>
+        </template>
+        <template if:true={isLoading}>
+            <div class="slds-spinner_container">
+                <div role="status" class="slds-spinner slds-spinner_medium">
+                    <span class="slds-assistive-text">Loading</span>
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </div>
+        </template>
+    </lightning-card>
+</template>
