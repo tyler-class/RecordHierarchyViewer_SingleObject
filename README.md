@@ -40,7 +40,7 @@ sfdx force:source:deploy -p force-app/main/default/classes/HierarchicalRecordCon
 
 Apex test class included:
 
-- ✅ 100% code coverage  
+- ✅ 92% code coverage  
 - ✅ Verifies record hierarchy from multiple entry points  
 - ✅ Tests dynamic field resolution including lookup relationships  
 
