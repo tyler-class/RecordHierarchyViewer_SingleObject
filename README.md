@@ -2,7 +2,8 @@
 
 A Lightning Web Component (LWC) that displays hierarchical data for **any SObject** in a nested tree grid format. Originally built for `Account`, this component has been enhanced to support any standard or custom object using dynamic metadata and recursive Apex.
 
----
+
+
 
 ## 📌 Features
 
@@ -12,7 +13,8 @@ A Lightning Web Component (LWC) that displays hierarchical data for **any SObjec
 - 🔄 Recursively fetches data via **Apex** and dynamically builds the hierarchy  
 - ⚙ Configurable via Lightning App Builder with properties for title, fields, and parent field  
 
----
+
+
 
 ## ⚙ Setup & Usage
 
@@ -32,7 +34,7 @@ sfdx force:source:deploy -p force-app/main/default/classes/HierarchicalRecordCon
   - `parentFieldApiName`: Case-sensitive API name of the parent lookup field (e.g. `ParentId`)
   - `fieldList`: Comma-separated list of fields to display (e.g. `Name,OwnerId,ParentId`)
 
----
+
 
 ## 🧪 Test Class
 
@@ -50,7 +52,7 @@ To run tests:
 sfdx force:apex:test:run --classnames HierarchicalRecordControllerTest --resultformat human --outputdir test-results --codecoverage
 ```
 
----
+
 
 ## 🔧 Component Properties (Design-Time Config)
 
@@ -62,7 +64,7 @@ sfdx force:apex:test:run --classnames HierarchicalRecordControllerTest --resultf
 | `fieldList`           | ✅        | Comma-separated API names of fields to show |
 | `parentFieldApiName`  | ✅        | API name of the parent lookup field used to build the hierarchy |
 
----
+
 
 ## 🧠 How It Works
 
@@ -74,7 +76,7 @@ sfdx force:apex:test:run --classnames HierarchicalRecordControllerTest --resultf
 3. Component constructs a **hierarchical structure** compatible with `<lightning-tree-grid>`.  
 4. Lookup fields and record names are rendered as **clickable links**.
 
----
+
 
 ## 📎 Useful Salesforce Docs
 
@@ -82,7 +84,7 @@ sfdx force:apex:test:run --classnames HierarchicalRecordControllerTest --resultf
 - Apex Schema Describe: https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_Schema_DescribeFieldResult.htm  
 - LWC Get Object Info: https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.reference_wire_adapters_get_object_info  
 
----
+
 
 ## 🧼 Notes & Best Practices
 
@@ -90,7 +92,7 @@ sfdx force:apex:test:run --classnames HierarchicalRecordControllerTest --resultf
 - Works best on objects with clear parent-child hierarchy (e.g. Account, Region, Custom__c).  
 - You can extend the Apex logic to include filtering, field sets, or pagination if needed.  
 
----
+
 
 ## 🧱 Folder Structure
 
@@ -103,7 +105,7 @@ force-app
         └── classes
             └── HierarchicalRecordController.cls
 ```
----
+
 ## 📸 Visual Walkthrough
 
 ### 🔷 **Account Object Example**
@@ -114,7 +116,7 @@ Configure the component for the `Account` object using component metadata:
 
 ![Account Config](assets/Account_config.png)
 
----
+
 
 #### 🔽 Collapsed View (Default)
 
@@ -122,7 +124,7 @@ The grid tree renders in collapsed state on page load:
 
 ![Account Collapsed](assets/Account_collapsed.png)
 
----
+
 
 #### 🔼 Expanded View
 
@@ -130,7 +132,7 @@ Once expanded, you can see the full hierarchy (note the icon showing the current
 
 ![Account Expanded](assets/Account_expanded.png)
 
----
+
 
 #### 🔗 Hyperlinked Records
 
@@ -138,7 +140,7 @@ Lookup and name fields are rendered as clickable links:
 
 ![Account Hyperlink](assets/Account_hyperlink.png)
 
----
+
 
 ### 🟣 **Custom Object Example**
 
@@ -148,7 +150,7 @@ Example configuration for a custom object with a parent lookup:
 
 ![Custom Config](assets/Custom_config.png)
 
----
+
 
 #### 🔽 Collapsed View
 
@@ -156,7 +158,7 @@ Initial load is collapsed:
 
 ![Custom Collapsed](assets/Custom_collapsed.png)
 
----
+
 
 #### 🔼 Expanded View
 
@@ -164,10 +166,9 @@ Expanded view showing the full custom object hierarchy:
 
 ![Custom Expanded](assets/Custom_expanded.png)
 
----
+
 
 ## 🙌 Author & Credits
 
 Originally created by Tyler Class 12/10/2025 | [www.tylerclass.net](https://tylerclass.net) | [www.github.com/tyler-class](https://github.com/tyler-class)
 
----
